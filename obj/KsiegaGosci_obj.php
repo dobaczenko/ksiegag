@@ -1,16 +1,20 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-class KsiegaGosci_obj{
+
+class KsiegaGosci_obj {
+
+    private $wpisId;
     private $wpisData;
     private $wpisNazwaWpisujacego;
     private $wpisTrescWpisu;
-    
-    function __construct($wpisData, $wpisNazwaWpisujacego, $wpisTrescWpisu) {
+
+    function __construct($wpisId, $wpisData, $wpisNazwaWpisujacego, $wpisTrescWpisu) {
+        $this->wpisId = $wpisId;
         $this->wpisData = $wpisData;
         $this->wpisNazwaWpisujacego = $wpisNazwaWpisujacego;
         $this->wpisTrescWpisu = $wpisTrescWpisu;
@@ -40,5 +44,12 @@ class KsiegaGosci_obj{
         $this->wpisTrescWpisu = $wpisTrescWpisu;
     }
 
+    function getWpisId() {
+        return $this->wpisId;
+    }
+
+    function setWpisId($wpisId): void {
+        $this->wpisId = $wpisId;
+    }
 
 }
