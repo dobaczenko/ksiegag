@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class KsiegaGosci_obj {
+class KsiegaGosci_obj implements JsonSerializable {
 
     private $wpisId;
     private $wpisData;
@@ -14,10 +14,28 @@ class KsiegaGosci_obj {
     private $wpisTrescWpisu;
 
     function __construct($wpisId, $wpisData, $wpisNazwaWpisujacego, $wpisTrescWpisu) {
-        $this->wpisId = $wpisId;
+        if ($wpisId == '') {
+            $this->wpisId = $this->generujId();
+        } else {
+            $this->wpisId = $wpisId;
+        }
         $this->wpisData = $wpisData;
         $this->wpisNazwaWpisujacego = $wpisNazwaWpisujacego;
         $this->wpisTrescWpisu = $wpisTrescWpisu;
+    }
+
+    private function generujId() {
+        return date("YmdHisU");
+    }
+
+    public function jsonSerialize() {
+        return
+                [
+                    'wpisId' => $this->getWpisId(),
+                    'wpisData' => $this->getWpisData(),
+                    'wpisNazwaWpisujacego' => $this->getWpisNazwaWpisujacego(),
+                    'wpisTrescWpisu' => $this->getWpisTrescWpisu()
+        ];
     }
 
     function getWpisData() {

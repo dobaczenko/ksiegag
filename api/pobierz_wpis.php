@@ -21,9 +21,7 @@ if (
     $returnObj = $function->odczytajZBazy($data->wpisId);
     if ($returnObj != "RECORD_NOT_FOUND") {
         http_response_code(200);
-        $function->usunZBazyRekord($data->wpisId);
-        echo json_encode(array("message" => "Wpis usuniety."));
-        
+        echo json_encode($returnObj);
     } else {
         // set response code - 404 Not found
         http_response_code(404);

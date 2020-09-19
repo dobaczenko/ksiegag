@@ -1,0 +1,21 @@
+1. Pobierz liste wpisow
+OPIS: Zwraca listę wszystkich wpisów do księgi gosci
+URL: http://localhost/ksiega_g/api/lista_wpisow.php
+JSON:
+
+2. Pobierz wybrany wpis
+OPIS: Zwraca tylko wybrany wpis do ksiegi gości. Id wpisu można pobrać z listy wpisów (patrz 1).
+URL: http://localhost/ksiega_g/api/pobierz_wpis.php
+JSON: {"wpisId":"202009191400461600516846"}
+
+3. Dodaj wpis
+OPIS: pozwala dodać nowy wpis do księgi gosci.
+URL: http://localhost/ksiega_g/api/dodaj_wpis.php
+JSON: {"wpisNazwaWpisujacego":"nazwaUsera","wpisTrescWpisu":"Jego wpis"}
+
+4. Usun wpis
+OPIS: Pozwala na skasowanie wskazanego wpisu z bazy (bo naprzykład nie nie spełnia wytycznych społecznosci)
+URL: http://localhost/ksiega_g/api/usun_wpis.php
+JSON: {"wpisId":"202009191400461600516846"}
+
+Wpisy znajdują sie w pliku txt, aplikacja nie używa bazy danych i nie wymaga żadnej konfiguracji do rozpoczęcia działania. Pisana była z myślą o PHP 7.2.

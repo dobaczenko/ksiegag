@@ -1,0 +1,5 @@
+RedirectMatch 403 ^/ksiega_g/?$
+RedirectMatch 403 ^/ksiega_g/engine/?$
+RedirectMatch 403 ^/ksiega_g/database/?$
+RedirectMatch 403 ^/ksiega_g/api/?$
+RedirectMatch 403 ^/ksiega_g/obj/?$
