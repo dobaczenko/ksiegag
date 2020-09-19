@@ -1,4 +1,0 @@
-{"wpisId":"202009191416531600517813","wpisData":"2020-09-19 14:16:53","wpisNazwaWpisujacego":"srakowiaa","wpisTrescWpisu":"Zrobi\u0142em kup\u0119 ponownie"}
-{"wpisId":"202009191426031600518363","wpisData":"2020-09-19 14:26:03","wpisNazwaWpisujacego":"srakowiaa","wpisTrescWpisu":"Zrobi\u0142em kup\u0119 ponownie i jeszcze raz"}
-{"wpisId":"202009191426271600518387","wpisData":"2020-09-19 14:26:27","wpisNazwaWpisujacego":"srakowiaa","wpisTrescWpisu":"Zrobi\u0142em kup\u0119 ponownie i jeszcze raz"}
-{"wpisId":"202009191431521600518712","wpisData":"2020-09-19 14:31:52","wpisNazwaWpisujacego":"srakowiaa","wpisTrescWpisu":"Zrobi\u0142em kup\u0119 ponownie i jeszcze raz"}
